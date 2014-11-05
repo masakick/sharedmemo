@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!--
+   sharedmemo written by masaki yamabe
+   https://github.com/masakick/sharedmemo
+  -->
+  <title>shared memo</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://cdn.mlkcca.com/v0.2.8/milkcocoa.js"></script>
+
+  <!-- you need jQuery hashchange event - v1.3 -
+	  https://github.com/cowboy/jquery-hashchange/tree/v1.3 -->
+	  
+  <script src="jquery.ba-hashchange.min.js"></script>
+
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="./">shared memo</a>
+			</div>
+	    </div>
+	</nav>
+	
+    <div class="container" style="margin-top:90px;">
+	    <ul class="nav nav-tabs" role="tablist">
+			<li id="nav-all" role="presentation" class="active"><a href="#/messages"><i class="glyphicon glyphicon-th-list"></i> All Memos</a></li>
+			<li id="nav-new" role="presentation"><a href="#/new"><i class="glyphicon glyphicon-plus"></i> New Memo</a></li>
+		</ul>
+    </div>
+
+    <div class="container" style="margin-top:30px;">
+	    <div id="messages"></div>
+	    <div id="message"></div>
+        <div id="postarea" class="postarea cf"></div>
+    </div>
+    
+    <footer role="contentinfo"style="margin-top:30px; font-size: 0.85em;">
+	    <div class="container"><p>Written by <a href="http://www.masakiyamabe.com/" target="_blank">Masaki Yamabe</a> at <a href="http://www.allianceport.jp/" target="_blank">Alliance Port</a> / powered by: <a href="https://mlkcca.com/" target="_blank">milkcocoa</a></p></div>
+	</footer>
+
+</body>
+</html>
